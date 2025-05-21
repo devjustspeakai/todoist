@@ -1,0 +1,47 @@
+.board {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  overflow-x: auto;
+  min-height: calc(100vh - 2rem);
+}
+
+.list {
+  background: #e2e4e6;
+  border-radius: 3px;
+  padding: 0.5rem;
+  width: 250px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-card {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input {
+  flex: 1;
+}
+
+.done {
+  text-decoration: line-through;
+}

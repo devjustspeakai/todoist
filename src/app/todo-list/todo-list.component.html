@@ -1,0 +1,16 @@
+<div class="board">
+  <div class="list">
+    <h3>Todo</h3>
+    <div class="cards">
+      <div class="card" *ngFor="let todo of todos; let i = index">
+        <span [class.done]="todo.done" (click)="todo.done = !todo.done">{{ todo.text }}</span>
+        <button (click)="removeTodo(i)">×</button>
+      </div>
+    </div>
+
+    <form class="new-card" (submit)="addTodo(); $event.preventDefault();">
+      <input type="text" [(ngModel)]="newTodo" name="todo" placeholder="Add new todo" />
+      <button type="submit">Add</button>
+    </form>
+  </div>
+</div>
